@@ -4,6 +4,7 @@ import {SnakeLoaderPage} from "@/features/snake/scenes/loader"
 import { PowerOnSelfTestPage } from "./features/chatbot/scenes/power-on-self-test";
 import { WindowsXpLoaderPage } from "./features/chatbot/scenes/windows-xp-loader";
 import { WindowsXpDesktopPage } from "./features/chatbot/scenes/windows-xp-desktop";
+import { CrazyForm } from "./features/crazyform/main"
 
 function App() {
 	return (
@@ -15,6 +16,8 @@ function App() {
 				<Route path="/chatbot" element={<PowerOnSelfTestPage />} />
 				<Route path="/chatbot/loader" element={<WindowsXpLoaderPage />} />
 				<Route path="/chatbot/desktop" element={<WindowsXpDesktopPage />} />
+
+				<Route path="/crazyform" element={<CrazyForm/>}/>
 			</Routes>
 		</BrowserRouter>
 	);
