@@ -1,3 +1,5 @@
+import { TestGafamModal } from "@/features/quiz/modal";
+
 function Home() {
 	
 	return (
@@ -13,6 +15,7 @@ function Home() {
 					alt="SWS logo"
 				/>
 			</a>
+			<TestGafamModal onClose={() => {}} />
 			<h1 className="text-5xl font-black">Nuit de l'info 2025</h1>
 		</div>
 	);

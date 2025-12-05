@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router";
-import Home from "./components/Home";
+import { OpenningPage } from "@/features/openning/components/page";
 import {SnakeLoaderPage} from "@/features/snake/scenes/loader"
 import { PowerOnSelfTestPage } from "./features/chatbot/scenes/power-on-self-test";
 import { WindowsXpLoaderPage } from "./features/chatbot/scenes/windows-xp-loader";
@@ -9,7 +9,7 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/" element={<Home />} />
+				<Route path="/" element={<OpenningPage />} />
 				<Route path="/snake" element={<SnakeLoaderPage />} />
 
 				<Route path="/chatbot" element={<PowerOnSelfTestPage />} />
