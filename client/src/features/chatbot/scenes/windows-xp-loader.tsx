@@ -13,7 +13,7 @@ export function WindowsXpLoaderPage() {
     return () => clearTimeout(timer);
   }, [navigate]);
 
-  return <div className="h-screen relative bg-black gap-16 flex flex-col  items-center justify-center w-full">
+  return <div className="h-screen relative bg-black text-white gap-16 flex flex-col  items-center justify-center w-full">
 
     <WindowsXpBootLogo />
     <WindowsXPLoader />

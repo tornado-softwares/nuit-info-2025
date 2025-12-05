@@ -52,7 +52,7 @@ export function PowerOnSelfTestPage() {
    
 
 
-    return <div className="h-screen relative bg-black flex flex-col gap-4 w-full p-4 font-bios ">
+    return <div className="h-screen relative bg-black text-white flex flex-col gap-4 w-full p-4 font-bios ">
 
         <div className="flex flex-col">
             <img src={american_megatrends_logo} alt="American Megatrends Logo" className="w-90 blur-[0.7px]" />
