@@ -10,7 +10,7 @@ import { FemmeInformatique } from "./features/femme/main";
 
 function App() {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename={import.meta.env.BASE_URL}>
 			<Routes>
 				<Route path="/" element={<OpenningPage />} />
 				<Route path="/mission" element={<MissionPage />} />
