@@ -23,9 +23,10 @@ export default defineConfig({
     {
       name: "fix-absolute-assets",
       transformIndexHtml(html: string) {
+        const base = process.env.VITE_BASE_URL || "/";
         return html.replace(
-          /(src|href)="\/(.*?)"/g,
-          `$1="${process.env.VITE_BASE_URL}$2"`,
+          new RegExp(`(src|href)="/(?!${base.replace("/", "")})`, "g"),
+          `$1="${base}/`,
         );
       },
     },
